@@ -1,0 +1,156 @@
+/* Reset margins, padding, and set universal box-sizing for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+/* Center the body content, set a colorful gradient background, and ensure full viewport height */
+body {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+    min-height: 100vh;
+    background-image: url('images/bulby.jpeg');
+    background-size: cover;  /* Ensure gradient covers entire background */
+    background-repeat: no-repeat; /* No repetition of background image */
+    background-position: center;  /* Center the gradient */
+    text-align: center; /* Center text inside the body */
+    flex-direction: column; /* Stack title and box vertically */
+}
+
+/* Title styling */
+h1 {
+    color: aliceblue;
+    margin-bottom: 30px; /* Space below the title */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px; /* Font size for the title */
+}
+
+/* Centering all content in the container */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center;     /* Center horizontally */
+    width: 100%;
+    height: 100%;
+    text-align: center; /* Center text inside the container */
+}
+
+/* Styling for the form container */
+.box {
+    padding: 20px 30px;  /* Adjusted padding for a more compact look */
+    width: 400px;       /* Reduced width */
+    height: 450px;      /* Reduced height */
+    backdrop-filter: blur(50px); /* Add a blur effect to the background */
+    border-radius: 30px;         /* Rounded corners */
+    background: rgba(49, 49, 49, 0.2); /* Semi-transparent background */
+    border: 1px solid rgba(255, 255, 255, 0); /* Invisible border */
+    display: flex;               /* Flexbox for vertical alignment */
+    flex-direction: column;      /* Stack children vertically */
+    align-items: center;         /* Center items horizontally within .box */
+    justify-content: center;     /* Center items vertically within .box */
+}
+
+/* Padding within the form box */
+.box .form {
+    padding: 15px; /* Adjusted padding for a more compact form */
+    width: 100%; /* Ensure the form takes full width of .box */
+}
+
+/* Style for the h2 headings */
+.box .form h2 {
+    color: aliceblue;   /* Text color */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;  /* Bold text */
+    margin-bottom: 20px;
+}
+
+/* Form layout */
+.box .form form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column; /* Stack form elements vertically */
+    align-items: center; /* Center form elements horizontally */
+    width: 100%; /* Ensure form takes full width of .box */
+}
+
+/* Input field styling */
+.box .form form .inputbox {
+    position: relative; /* Ensure the label can be positioned absolutely */
+    margin-bottom: 25px; /* Adjusted spacing below input */
+    width: 100%; /* Ensure inputbox takes full width of form */
+}
+
+.box .form form .inputbox input {
+    padding: 10px 50px;        /* Adjusted padding around input text */
+    border: none;              /* Remove borders */
+    outline: none;             /* Remove outline */
+    background: none;          /* Transparent background */
+    border-bottom: 1px solid rgb(17, 3, 51); /* Add a bottom border */
+    margin-top: 10px;          /* Space between the bottom border and input text */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;  /* Font for input text */
+    font-size: 16px;           /* Font size */
+    letter-spacing: 1px;       /* Add space between letters */
+    color: #000000;            /* Input text color */
+    width: 100%; /* Ensure input takes full width of inputbox */
+    text-align: center; /* Center text inside input */
+}
+
+/* Label (span) for input fields */
+.box .form form .inputbox span {
+    position: absolute;
+    top: -15px;                  /* Position label above the input field */
+    left: 0;
+    font-family: sans-serif;
+    font-size: 14px;
+    color: aliceblue;            /* Label text color */
+    letter-spacing: 1px;         /* Spacing between letters */
+}
+
+/* Submit button styling */
+.box .form form .sub {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    padding: 10px 50px; /* Adjusted padding */
+    color: aliceblue; /* Button text color */
+    border: none;     /* Remove border */
+    background: rgb(78, 109, 209); /* Button background color */
+    border-radius: 5px; /* Rounded button corners */
+    cursor: pointer;    /* Pointer cursor when hovering */
+    transition: background-color 0.3s ease; /* Smooth transition effect on hover */
+    text-align: center; /* Center text inside the button */
+}
+
+/* Hover effect for submit button */
+.box .form form .sub:hover {
+    background: rgb(58, 89, 189); /* Darker button color on hover */
+}
+
+/* Container for buttons */
+.button-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center; /* Center buttons horizontally */
+}
+
+/* Download button styling */
+.download-btn {
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Button background color */
+    color: white;              /* Button text color */
+    border: none;              /* Remove border */
+    border-radius: 5px;        /* Rounded corners */
+    cursor: pointer;           /* Pointer cursor on hover */
+    text-align: center; /* Center text inside the button */
+    margin: 5px; /* Space between buttons */
+}
+
+/* Hover effect for download button */
+.download-btn:hover {
+    background-color: #45a049; /* Darker background on hover */
+}
+

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Firebase Pokémon Database</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Pokémon Database</h1>
+    <div class="box">
+        <div class="form">
+            <form id="pokemonForm" autocomplete="off">
+                <h2>Enter Pokémon Information</h2>
+                <div class="inputbox">
+                    <input type="text" id="pokemonName" placeholder="Pokémon Name" required autocomplete="off">
+                </div>
+                <div class="inputbox">
+                    <input type="number" id="pokedexNumber" placeholder="Pokédex Number" required autocomplete="off">
+                </div>
+                <div class="inputbox">
+                    <input type="number" id="numberCaught" placeholder="Number Caught" required autocomplete="off">
+                </div>
+                <button type="submit" class="sub" id="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <button id="downloadAllBtn" class="download-btn">Retrieve All Pokémon Data</button>
+    <button id="downloadByPokedexNumberBtn" class="download-btn">Retrieve by Pokédex Number</button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script type="module" src="index.js"></script>
+</body>
+</html>
